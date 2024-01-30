@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+.container{ 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(223,217,217);
+    background: radial-gradient(circle, rgb(133, 131, 131) 7%, rgba(74,74,74,1) 81%);  
+}
+
+.wrapper {  
+    background-color: #3b3a3a;
+    border-radius: 15px;
+    padding: 10px;
+    border: solid 3px black;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+}
+.symbols{
+    background-color: rgb(214, 214, 214);
+    box-shadow: -2px 2px 5px 1px #b6b3b3;
+    margin: 2px;
+}
+.input{
+    padding: 5px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: #424141;
+    border: none;
+    color: white;
+}
+
+.symbols, .input{
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.input{
+    text-align: end;
+    border: none;
+}
+#equal{
+    background-color: orange;
+    color: white; 
+}
+#add,#subtract,#multiply,#divide,#modulus,#delete_,#clear{
+    background-color: #fff;
+    background-color: rgb(124, 124, 124);
+    color: white;
+}
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="wrapper">
+            <input type="text" name="" class="input" id="input">
+            <button class="symbols" id="clear">C</button>
+            <button class="symbols" id="delete_">DEL</button>
+            <button class="symbols"id="modulus">%</button>
+            <button class="symbols" id="divide">/</button>
+            <button class="symbols">7</button>
+            <button class="symbols">8</button>
+            <button class="symbols">9</button>
+            <button class="symbols" id="multiply">*</button>
+            <button class="symbols">4</button>
+            <button class="symbols">5</button>
+            <button class="symbols">6</button>
+            <button class="symbols" id="subtract">-</button>
+            <button class="symbols">1</button>
+            <button class="symbols">2</button>
+            <button class="symbols">3</button>
+            <button class="symbols" id="add">+</button>
+            <button class="symbols">00</button>
+            <button class="symbols">0</button>
+            <button class="symbols" id="dot">.</button>
+            <button class="symbols"id="equal">=</button>
+        </div>
+    </div>
+</body>
+<script src="Index.js"></script>
+</html>
